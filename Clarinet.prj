@@ -1,0 +1,183 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3943687473" file="/home/luca/Dropbox/MATLAB scripts/Clarinet/Clarinet.prj" location="/home/luca/Dropbox/MATLAB scripts/Clarinet" name="Clarinet" target="target.mlapps" target-name="Package App">
+    <param.appname>Clarinet</param.appname>
+    <param.authnamewatermark>Luca Della Santina</param.authnamewatermark>
+    <param.email>luca.dellasantina@gmail.com</param.email>
+    <param.company />
+    <param.icon>${PROJECT_ROOT}/Clarinet_resources/icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}/Clarinet_resources/icon_48.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/icon_24.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/icon_16.png</file>
+    </param.icons>
+    <param.summary>Lightweight electrophysiology data analysis</param.summary>
+    <param.description />
+    <param.screenshot>${PROJECT_ROOT}/Clarinet_resources/Clarinet.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>/home/luca/Dropbox/MATLAB scripts/Clarinet</param.output>
+    <param.guid>80e3840d-a554-40ef-9eb5-b2d596afb8ef</param.guid>
+    <unset>
+      <param.company />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/Clarinet.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/CellData.m</file>
+      <file>${PROJECT_ROOT}/CellDataByAmp.m</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/48px-execute.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/48px-export.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/48px-info.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/48px-open.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/48px-save.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/48px-search.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/48px-settings.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/Clarinet.png</file>
+      <file>${PROJECT_ROOT}/EpochData.m</file>
+      <file>${PROJECT_ROOT}/KeyValueEntity.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/all.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/any.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/concat.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/contains.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/distinct.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/elementAt.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/empty.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/first.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/firstOrDefault.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/groupBy.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/join.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/last.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/lastOrDefault.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/linq.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/ofType.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/place.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/private/checkFunc.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/private/flatten.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/private/flattest.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/randomize.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/reverse.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/select.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/selectMany.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/skip.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/skipWhile.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/sort.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/take.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/takeWhile.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/toArray.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/toDictionary.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/toList.m</file>
+      <file>${PROJECT_ROOT}/MatlabQuery/@linq/where.m</file>
+      <file>${PROJECT_ROOT}/SymphonyParser.m</file>
+      <file>${PROJECT_ROOT}/SymphonyV1Parser.m</file>
+      <file>${PROJECT_ROOT}/SymphonyV2Parser.m</file>
+      <file>${PROJECT_ROOT}/addToMap.m</file>
+      <file>${PROJECT_ROOT}/dotnetTicksToDateTime.m</file>
+      <file>${PROJECT_ROOT}/editStruct.m</file>
+      <file>${PROJECT_ROOT}/getMatchingKeyValue.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/all.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/and.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/any.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/breadthfirstiterator.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/chop.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/condense.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/conditioniterator.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/decondense.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/decorateplots.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/depth.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/depthfirstiterator.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/depthtree.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/eq.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/find.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/findpath.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/flatten.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/ge.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/graft.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/gt.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/isemptynode.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/issync.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/ldivide.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/le.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/lt.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/minus.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/ne.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/nodeorderiterator.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/not.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/or.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/plot.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/plus.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/power.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/private/contentToString.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/private/permuteIfNeeded.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/rdivide.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/recursivecumfun.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/regexp.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/regexpi.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/regexprep.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/removenode.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/strcmp.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/strcmpi.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/strfind.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/strncmp.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/strncmpi.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/strrep.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/subtree.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/times.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/tostring.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/tree.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/treefun.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/treefun2.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/uminus.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/uplus.m</file>
+      <file>${PROJECT_ROOT}/matlab-tree/@tree/xor.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/home/luca/Dropbox/MATLAB scripts" name="Clarinet" optional="false">/home/luca/Dropbox/MATLAB scripts/Clarinet</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/home/luca/MATLAB/R2018b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>4.15.0-38-generic</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
