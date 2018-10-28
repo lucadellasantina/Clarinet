@@ -4,7 +4,7 @@ function result = smoothEpoch(epoch, settings)
 if isempty(epoch) && isempty(settings)
     result.mode = 'moving';     % moving / lowess / loess / sgolay / rlowess / rloess
     result.span = 5;            % Smoothing window size in points
-    result.device = 'Amp1';    % List of amplifier channels to process, default: "@(epoch, devices) sa_labs.analysis.common.getdeviceForEpoch(epoch, devices)"
+    result.device = 'Amp1';     %% Device to filter epoch (i.e amplifier name)
     return                      % Return default settings as a structure
 end
 
