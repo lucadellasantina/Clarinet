@@ -1,5 +1,5 @@
 function result = subtractBaseline(epoch, settings)
-%% Subtract the average of pre-stimulus points to the epoch
+%% Subtract the average of pre-stimulus points from epoch
 
 if isempty(epoch) && isempty(settings)
     result.prePoints = 15;      % Pre-stimulus points to use as baseline

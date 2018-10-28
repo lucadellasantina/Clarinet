@@ -1,5 +1,5 @@
 function result = smoothEpoch(epoch, settings)
-%% Smooth data (mode = moving/lowess/loess/sgolay)
+%% Smooth data along time, mode:[moving|lowess|loess|sgolay]
 
 if isempty(epoch) && isempty(settings)
     result.mode     = 'moving'; % moving / lowess / loess / sgolay / rlowess / rloess

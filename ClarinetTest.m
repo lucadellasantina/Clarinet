@@ -7,7 +7,7 @@ data = ref.getResult;
 celldata = data{end};
 epochs = celldata.epochs;
 epoch = epochs(1);
-
+epoch.get('devices')
 
 %% Test importing symphony v2
 
@@ -17,3 +17,5 @@ ref.parse; % find out where is tree(), now it conflicts with tree.m in one depre
 data = ref.getResult;
 celldata = data{end};
 epochs = celldata.epochs;
+epoch = epochs(1);
+epoch.get('devices')
