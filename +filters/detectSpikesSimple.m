@@ -1,4 +1,4 @@
-function result = simpleSpikeDetector(epoch, settings)
+function result = detectSpikesSimple(epoch, settings)
 %% Simple spike detection (Greg Schwartz)
 
 % For more info, refer to https://github.com/SchwartzNU/SymphonyAnalysis/blob/master/GUIs/SpikeDetectorGUI.m

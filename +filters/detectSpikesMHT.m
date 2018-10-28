@@ -1,4 +1,4 @@
-function result = mhtSpikeDetector(epoch, settings)
+function result = detectSpikesMHT(epoch, settings)
 %% Spike detection (Max Turner)
 
 if isempty(epoch) && isempty(settings)
