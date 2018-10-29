@@ -21,7 +21,6 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/lucadellasantina/Clarinet">View on GitHub</a>
-
           <h2 id="project_title">Clarinet</h2>
           <h2 id="project_tagline">Electrophysiology time series analysis</h2>
         </header>
@@ -43,25 +42,29 @@
       <section id="main_content" class="inner">
         <div style="text-align:center"><h2>What is Clarinet?</h2><img src ="images/app_icon.png"/></div>
         <p>Clarinet is a MATLAB® app designed to analyze electrophysiology experiments.</p>
+        <p>Developed for neuroscience research, Clarinet allows you to analyze neuronal signals acquired with a variety of intracellular and extracellular recording techniques.</p>
 
-        <p>This software is developed for neuroscience research purposes, where it is able to analyze neuronal signals recorded with a variety of intracellular and extracellular recording techniques.</p>
+        <div style="text-align:center"><h2>Explore your data</h2></div>
 
-        <div style="text-align:center"><h2>Visually interact with your data</h2></div>
-
-        <p>Clarinet can display your recorded epochs, you can zoom and pan signals within the plot area.</p>
+        <p>Clarinet can display your recorded epochs, use your mouse to zoom and pan signal epochs. Search and visualize data that meets specific conditions, then export only the selected epoch for further processing or plotting with your favorite tools.</p>
         <div style="text-align:center"><img src ="images/Screenshot_GUI.png" width="100%"/></div>
 
         <div style="text-align:center"><h2>Plays in concert with Symphony</h2></div>
 
+        <p>Clarinet is designed from the beginning to be the perfect companion of <a href="https://symphony-das.github.io/">Symphony</a>, the data acquisition suite developed in <a href="https://depts.washington.edu/riekelab/">Fred Rieke's Lab</a> at the University of Washington. Import automatically data saved with either Symphony (version 1 or 2), taking full advantage during analysis of the dynamic data structure that makes Symphony shine.</p>
         <div style="text-align:center"><img src ="images/clariner-loves-symphony.png" width="384px"/></div>
-        <p>Clarine is designed from the beginning to be the perfect companion of <a href="https://symphony-das.github.io/">Symphony</a>, the data acquisition suite developed in <a href="https://depts.washington.edu/riekelab/">Fred Rieke's Lab</a> at the University of Washington. Clarinet imports automatically data saved with either Symphony version 1 or 2, taking full advantage of the dynamic data structure that makes Symphony shine.</p>
+
+        <div style="text-align:center"><h2>Extensible by design</h2></div>
+
+        <p>Create your analysis pipeline by using built-in epoch processors or create your own, then process many epochs at once.</p>
+        <div style="text-align:center"><img src ="images/Screenshot_GUI_processor.png" width="100%"/></div>
+        <p>The process of creating an epoch processor is as easy as writing a simple function in MATLAB. Clarinet will dynamically load new epoch processors, allowing users to modify their parameters and then processing selected epochs.</p>
+        <div style="text-align:center"><img src ="images/Screenshot_processor_code.png" width="100%"/></div>
 
         <div style="text-align:center"><h2>Runs on your favorite platform</h2></div>
 
-        <p>Whether your workstation relies on Microsoft Windows, macOS or Linux, Clarinet can run on your computer since it relies only on core Matlab functions.</p>
+        <p>Whether your workstation uses Microsoft Windows, macOS or Linux, Clarinet can run on your computer since it relies only on core Matlab functions.</p>
         <div style="text-align:center"><img src ="images/logo_platforms.png" width="75%"/></div>
-
-        Having a single code base for all platforms makes developing new features as well as fixing bugs a much faster and enjoyable journey.
 
         <div style="text-align:center"><h2>Free as in Freedom</h2></div>
 
