@@ -96,7 +96,8 @@ classdef CellData < KeyValueEntity
                     try
                         map = addToMap(map, num2str(value), epochIndex);
                     catch e %#ok
-                        for v = each(value)
+                        for i = 1: numel(value)
+                            v = value{i};
                             map = addToMap(map, num2str(v), epochIndex);
                         end
                     end
@@ -142,7 +143,8 @@ classdef CellData < KeyValueEntity
             keys = setdiff(obj.getEpochKeysetUnion(epochIndices), excluded);
             map = containers.Map();
             
-            for key = each(keys)
+            for i = 1:numel(keys)
+                key = keys{i};
                 values = obj.getEpochValues(key, epochIndices);
                 map(key) = obj.formatCells(values);
             end

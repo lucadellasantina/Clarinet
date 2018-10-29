@@ -20,10 +20,14 @@
 %
 % *Change log*
 %
-% _*Version 1.0*            created on 2018-10-26 by Luca Della Santina_
+% _*Version 1.0*            created on 2018-10-28 by Luca Della Santina_
 %
 %  + Import epochs from Symphony v1 & v2
-%  + Filter selected epoch with dynamically imported filter functions
+%  + Process selected epoch with dynamically imported processor functions
+%  + Search epochs matching a set of conditions
 %  + Display epoch's metadata as table
 %  + Plot selected epochs
+%  + Plot raw or processed version of the epoch
+%  + Plot all epochs or result of last search
+%  + Display epoch data as a function of time or samples
 %

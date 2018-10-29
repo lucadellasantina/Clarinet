@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3637719943" file="/home/luca/Dropbox/MATLAB scripts/Clarinet/Clarinet.prj" location="/home/luca/Dropbox/MATLAB scripts/Clarinet" name="Clarinet" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2959424018" file="/home/luca/Dropbox/MATLAB scripts/Clarinet/Clarinet.prj" location="/home/luca/Dropbox/MATLAB scripts/Clarinet" name="Clarinet" target="target.mlapps" target-name="Package App">
     <param.appname>Clarinet</param.appname>
     <param.authnamewatermark>Luca Della Santina</param.authnamewatermark>
     <param.email>luca.dellasantina@gmail.com</param.email>
@@ -37,6 +37,7 @@
       <file>${PROJECT_ROOT}/CellDataByAmp.m</file>
       <file>${PROJECT_ROOT}/Clarinet_resources/48px-List-add.png</file>
       <file>${PROJECT_ROOT}/Clarinet_resources/48px-List-remove.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/48px-Manual.png</file>
       <file>${PROJECT_ROOT}/Clarinet_resources/48px-execute.png</file>
       <file>${PROJECT_ROOT}/Clarinet_resources/48px-export.png</file>
       <file>${PROJECT_ROOT}/Clarinet_resources/48px-info.png</file>
@@ -45,7 +46,10 @@
       <file>${PROJECT_ROOT}/Clarinet_resources/48px-save.png</file>
       <file>${PROJECT_ROOT}/Clarinet_resources/48px-search.png</file>
       <file>${PROJECT_ROOT}/Clarinet_resources/48px-settings.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/48px-web-browser.png</file>
       <file>${PROJECT_ROOT}/Clarinet_resources/Clarinet.png</file>
+      <file>${PROJECT_ROOT}/Clarinet_resources/bug.png</file>
+      <file>${PROJECT_ROOT}/DialogAbout.mlapp</file>
       <file>${PROJECT_ROOT}/DialogFind.mlapp</file>
       <file>${PROJECT_ROOT}/EpochData.m</file>
       <file>${PROJECT_ROOT}/KeyValueEntity.m</file>
