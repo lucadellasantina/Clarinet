@@ -1,6 +1,10 @@
 function result = filterFrequencies(epoch, settings)
 %% Filter data in the frequency domain [lowpass|highpass|notch] 
-
+ 
+% Version 3.0                              2018-10-30 by Luca Della Santina
+%  + Simplified the logic of this filter to the bare minimum
+%  + Wrapped the function as a Clarinet processor
+%
 % Version 2.1                              2018-03-20 by Luca Della Santina 
 %   % Output time series vector size matches the size of input data
 %   + notch_freq allows to add a custom notch filter (-1 means disabled)
@@ -16,7 +20,8 @@ if isempty(epoch) && isempty(settings)
     result.highpass_freq = 0;  % High-pass filter cutoff frequency
     result.lowpass_freq  = 0;  % Low-pass filter cutoff frequency
     result.notch_freq    = 0;  % Notch frequency to remove
-    return                      % Return default settings as a structure
+    result.device        = ''; % Device containing epoch to process
+    return                     % Return default settings
 end
 
 meta        = epoch.toStructure;% metadata of the epoch stored as structure
