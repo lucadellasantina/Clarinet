@@ -1,4 +1,4 @@
-%% Clarinet: Lightweight electrophysiology data analysis
+%% Clarinet: Electrophysiology time series data analysis
 % Copyright (C) 2018 Luca Della Santina
 %
 %  This file is part of Clarinet
@@ -20,9 +20,17 @@
 %
 % *Change log*
 %
-% _*Version 1.0*            created on 2018-10-28 by Luca Della Santina_
+% _*Version 1.1*            created on 2018-11-01 by Luca Della Santina_
+%
+%  + 2D/3D plot switcher
+%  + Search criteria can be either "Any" or "All" conditions to be met
+%  + Find dialog remembers last settings within session
+%  + Ensured destruction of dialogs before Clarinet is closed
+%
+% _*Version 1.0*            created on 2018-10-30 by Luca Della Santina_
 %
 %  + Import epochs from Symphony v1 & v2
+%  + Load / Save current analysis
 %  + Process selected epoch with dynamically imported processor functions
 %  + Search epochs matching a set of conditions
 %  + Display epoch's metadata as table
@@ -30,4 +38,8 @@
 %  + Plot raw or processed version of the epoch
 %  + Plot all epochs or result of last search
 %  + Display epoch data as a function of time or samples
+%  + Spike detection processor
+%  + Smooth epoch processor
+%  + Frequency filter processor
+%  + Subtract baseline processor
 %

@@ -1,4 +1,4 @@
-%% Clarinet: Lightweight electrophysiology data analysis
+%% Clarinet: Electrophysiology time series data analysis
 % Copyright (C) 2018 Luca Della Santina
 %
 %  This file is part of Clarinet
