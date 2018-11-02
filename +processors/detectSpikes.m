@@ -1,33 +1,13 @@
-%% Clarinet: Electrophysiology time series data analysis
-% Copyright (C) 2018 Luca Della Santina
-%
-%  This file is part of Clarinet
-%
-% This program is free software: you can redistribute it and/or modify
-% it under the terms of the GNU General Public License as published by
-% the Free Software Foundation, either version 3 of the License, or
-% (at your option) any later version.
-%
-% This program is distributed in the hope that it will be useful,
-% but WITHOUT ANY WARRANTY; without even the implied warranty of
-% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-% GNU General Public License for more details.
-%
-% You should have received a copy of the GNU General Public License
-% along with this program.  If not, see <http://www.gnu.org/licenses/>.
-% This software is released under the terms of the GPL v3 software license
-%
-function result = detectSpikes(epoch, settings)
+function result = detectSpikes(epoch, device, settings)
 %% Detect times at which spikes occur in the epoch
 
 if isempty(epoch) && isempty(settings)
     result.refractoryPeriod = 1.5E-3;   % Refactory period in seconds
     result.searchWindow = 1E-3;         % Search window for spikes in seconds
-    result.device = '';                 % Device on which perform the filter (i.e. amplifier channel)
     return                              % Return default settings as a structure
 end
 
-response = epoch.getResponse(settings.device);
+response = epoch.getResponse(device);
 
 [spikeTimes, spikeAmplitudes, statistics] = detectSpikesMHT(response.quantity,...
     'sampleRate', epoch.get('sampleRate'),...
@@ -38,10 +18,10 @@ fdata = zeros(size(response.quantity));
 fdata(spikeTimes) = 1;
 response.quantity = fdata;
 
-epoch.addDerivedResponse('filteredResponse', response, settings.device);
-%epoch.addDerivedResponse('spikeTimes', spikeTimes, settings.device);
-%epoch.addDerivedResponse('spikeAmplitudes', spikeAmplitudes, settings.device);
-%epoch.addDerivedResponseInMemory('spikeStatistics', statistics, settings.device);
+epoch.addDerivedResponse('filteredResponse', response, device);
+%epoch.addDerivedResponse('spikeTimes', spikeTimes, device);
+%epoch.addDerivedResponse('spikeAmplitudes', spikeAmplitudes, device);
+%epoch.addDerivedResponseInMemory('spikeStatistics', statistics, device);
 
 result = epoch;
 end

@@ -20,6 +20,12 @@
 %
 % *Change log*
 %
+% _*Version 1.2*            created on 2018-11-02 by Luca Della Santina_
+%
+%  + Processing pipeline allows using multiple epoch processors in chain
+%  + Processor function definition now requires device as parameter
+%  + Fixed bug in processors displaying license instead of description
+%
 % _*Version 1.1*            created on 2018-11-01 by Luca Della Santina_
 %
 %  + 2D/3D plot switcher

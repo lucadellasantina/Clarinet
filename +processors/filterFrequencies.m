@@ -1,23 +1,4 @@
-%% Clarinet: Electrophysiology time series data analysis
-% Copyright (C) 2018 Luca Della Santina
-%
-%  This file is part of Clarinet
-%
-% This program is free software: you can redistribute it and/or modify
-% it under the terms of the GNU General Public License as published by
-% the Free Software Foundation, either version 3 of the License, or
-% (at your option) any later version.
-%
-% This program is distributed in the hope that it will be useful,
-% but WITHOUT ANY WARRANTY; without even the implied warranty of
-% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-% GNU General Public License for more details.
-%
-% You should have received a copy of the GNU General Public License
-% along with this program.  If not, see <http://www.gnu.org/licenses/>.
-% This software is released under the terms of the GPL v3 software license
-%
-function result = filterFrequencies(epoch, settings)
+function result = filterFrequencies(epoch, device, settings)
 %% Filter data in the frequency domain [lowpass|highpass|notch] 
  
 % Version 3.0                              2018-10-30 by Luca Della Santina
@@ -39,12 +20,11 @@ if isempty(epoch) && isempty(settings)
     result.highpass_freq = 0;  % High-pass filter cutoff frequency
     result.lowpass_freq  = 0;  % Low-pass filter cutoff frequency
     result.notch_freq    = 0;  % Notch frequency to remove
-    result.device        = ''; % Device containing epoch to process
     return                     % Return default settings
 end
 
 meta        = epoch.toStructure;% metadata of the epoch stored as structure
-response    = epoch.getDerivedResponse('filteredResponse', settings.device);
+response    = epoch.getDerivedResponse('filteredResponse', device);
 data        = response.quantity';
 
 N           = length(data);     % number of samples in the time domain
@@ -58,7 +38,7 @@ X           = ifft(y2);         % inverse transform data to the time domain
 fdata       = X(1:numel(data)); % keep only the same time range as original signal
 response.quantity = fdata';
 
-epoch.addDerivedResponse('filteredResponse', response, settings.device);
+epoch.addDerivedResponse('filteredResponse', response, device);
 result      = epoch;
 end
 
