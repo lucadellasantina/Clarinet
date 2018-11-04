@@ -20,7 +20,14 @@
 %
 % *Change log*
 %
-% _*Version 1.4*            created on 2018-11-XX by Luca Della Santina_
+% _*Version 1.5*            created on 2018-11-04 by Luca Della Santina_
+%
+%  + New Epoch processors: interpolate, decimate, truncate
+%  + New Epoch processors: addNoise, addNonLinearity
+%  + New Epoch processor: powerSpectrum, subtractDrift
+%  + Fixes error when loading About dialog multiple times
+%
+% _*Version 1.4*            created on 2018-11-04 by Luca Della Santina_
 %
 %  + Epoch processors called without arguments return default setting
 %  + Removed need for settings.device in UI processor settings

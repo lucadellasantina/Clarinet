@@ -23,7 +23,7 @@ if nargin == 0
     return                     % Return default settings
 end
 
-meta        = epoch.toStructure;% metadata of the epoch stored as structure
+meta        = epoch.toStructure; % metadata stored as  matlab structure
 response    = epoch.getDerivedResponse('filteredResponse', device);
 data        = response.quantity';
 
