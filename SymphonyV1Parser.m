@@ -38,11 +38,6 @@ classdef SymphonyV1Parser < SymphonyParser
             obj = obj@SymphonyParser(fname);
         end
 
-        function info = invokeH5Info(obj)
-            info = hdf5info(obj.fname, 'ReadAttributes', false);
-            info = info.GroupHierarchy(1);
-        end
-
         function obj = parse(obj)
             data = CellData();
 
@@ -93,8 +88,11 @@ classdef SymphonyV1Parser < SymphonyParser
             data.attributes('Nepochs') = nEpochs;
             data.attributes('h5File') = obj.fname;
             data.attributes('parsedDate') = datetime;
-            data.attributes('recordingLabel') = '_v1';
-            obj.addCellDataByAmps(data);
+            [~, fName, ~] = fileparts(obj.fname);
+            data.attributes('label') = fName;
+            
+            %obj.addCellDataByAmps(data);
+            obj.cellDataList{end + 1} = data;
         end
 
         function map = addDataLinks(~, responseGroups)

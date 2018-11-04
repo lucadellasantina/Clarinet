@@ -19,7 +19,7 @@
 %
 classdef SymphonyParser < handle
 
-    properties (Access = protected)
+    properties
         fname
         info
         cellDataList

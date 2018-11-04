@@ -18,23 +18,28 @@
 % This software is released under the terms of the GPL v3 software license
 %
 %% Test importing symphony v1
+fName = 'symphony_v1.h5';
+%fName = '20180102Fc1.h5';
 
-disp(['Importing file coming from Sympohony version: ' num2str(SymphonyParser.getVersion('symphony_v1.h5'))]);
-ref = SymphonyV1Parser('symphony_v1.h5');
+disp(['Importing file coming from Symphony version: ' num2str(SymphonyParser.getVersion(fName))]);
+ref = SymphonyV1Parser(fName);
 ref.parse;
 data = ref.getResult;
 celldata = data{end};
 epochs = celldata.epochs;
 epoch = epochs(1);
-epoch.get('devices')
+%epoch.get('devices')
 
 %% Test importing symphony v2
+%fName = 'symphony_v2.h5';
+%fName = '2018-01-23_ERG_CD1b.h5';
+fName = '2018-01-23_ERG_C57BL.h5';
 
-disp(['Importing file coming from Sympohony version: ' num2str(SymphonyParser.getVersion('symphony_v2.h5'))]);
-ref = SymphonyV2Parser('symphony_v2.h5');
+disp(['Importing file coming from Symphony version: ' num2str(SymphonyParser.getVersion(fName))]);
+ref = SymphonyV2Parser(fName);
 ref.parse; % find out where is tree(), now it conflicts with tree.m in one deprecated matlab toolbox, check using "which tree"
 data = ref.getResult;
 celldata = data{end};
 epochs = celldata.epochs;
 epoch = epochs(1);
-epoch.get('devices')
+%epoch.get('devices')

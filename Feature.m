@@ -59,7 +59,7 @@ classdef Feature < handle & matlab.mixin.Heterogeneous
             d = obj.formatData(d);
         end
         
-        function obj = set.data(obj, d)
+        function set.data(obj, d)
             obj.dataHandler = d;
         end
     end

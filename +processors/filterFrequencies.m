@@ -16,7 +16,7 @@ function result = filterFrequencies(epoch, device, settings)
 % Version 1.0 Shmuel Ben-Ezra, Ultrashape ltd. August 2009
 
 
-if isempty(epoch) && isempty(settings)
+if nargin == 0
     result.highpass_freq = 0;  % High-pass filter cutoff frequency
     result.lowpass_freq  = 0;  % Low-pass filter cutoff frequency
     result.notch_freq    = 0;  % Notch frequency to remove

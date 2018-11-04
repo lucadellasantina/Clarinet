@@ -52,14 +52,13 @@ classdef SymphonyV2Parser < SymphonyParser
             elapsedTime = toc;
             disp(['Generating source tree in [ ' num2str(elapsedTime) ' s ]' ]);
 
-            numberOfClusters = numel(epochsByCellMap.keys);
             labels = epochsByCellMap.keys;
-
-            for i = 1 : numberOfClusters
+            for i = 1 : numel(labels)
                 h5epochs =  epochsByCellMap(labels{i});
                 cellData = obj.buildCellData(labels{i}, h5epochs);
                 cellData.attributes = obj.getSourceAttributes(sourceTree, labels{i}, cellData.attributes);
-                obj.addCellDataByAmps(cellData);
+                %obj.addCellDataByAmps(cellData);
+                obj.cellDataList{end + 1} = cellData;
             end
         end
 
@@ -126,7 +125,7 @@ classdef SymphonyV2Parser < SymphonyParser
             cell.attributes('parsedDate') = datestr(datetime('today'));
             cell.attributes('symphonyVersion') = 2.0; % WHY IS THIS HARDCODED?
             cell.attributes('h5File') = obj.fname;
-            cell.attributes('recordingLabel') =  ['c' char(regexp(label, '[0-9]+', 'match'))];
+            %cell.attributes('recordingLabel') =  ['c' char(regexp(label,'[0-9]+', 'match'))]; % LDS: this requires cells to be called "c1...cn"
         end
 
         function epochGroupMap = getEpochsByCellLabel(obj, epochGroups)

@@ -20,6 +20,14 @@
 %
 % *Change log*
 %
+% _*Version 1.4*            created on 2018-11-XX by Luca Della Santina_
+%
+%  + Epoch processors called without arguments return default setting
+%  + Removed need for settings.device in UI processor settings
+%  + Display date and time each epoch was recorded inside EpochTree
+%  + SymphonyParser removed enforcement of label naming scheme (c1 ... cn)
+%  + SymphonyParser.parse returns only the list of epochs by label(faster)
+%
 % _*Version 1.3*            created on 2018-11-03 by Luca Della Santina_
 %
 %  + Epochs can be tagged with colors for easy grouping

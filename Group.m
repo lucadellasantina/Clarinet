@@ -268,7 +268,7 @@ classdef Group < KeyValueEntity
 	    function data = getData(obj, features)
 	    	try
 	    	    data = [features.data];
-	    	catch exception
+            catch
 	    	    data = {features.data};
 	    	end
 	    end

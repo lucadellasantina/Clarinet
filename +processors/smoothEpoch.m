@@ -1,7 +1,7 @@
 function result = smoothEpoch(epoch, device, settings)
 %% Smooth data along time, mode:[moving|lowess|loess|sgolay]
 
-if isempty(epoch) && isempty(settings)
+if nargin == 0
     result.mode     = 'moving'; % moving / lowess / loess / sgolay / rlowess / rloess
     result.span     = 5;        % Smoothing window size in points
     return                      % Return default settings as a structure

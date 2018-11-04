@@ -1,7 +1,7 @@
 function result = detectSpikes(epoch, device, settings)
 %% Detect times at which spikes occur in the epoch
 
-if isempty(epoch) && isempty(settings)
+if nargin == 0
     result.refractoryPeriod = 1.5E-3;   % Refactory period in seconds
     result.searchWindow = 1E-3;         % Search window for spikes in seconds
     return                              % Return default settings as a structure

@@ -1,7 +1,7 @@
 function result = subtractBaseline(epoch, device, settings)
 %% Subtract the average of pre-stimulus points from epoch
 
-if isempty(epoch) && isempty(settings)
+if nargin == 0
     result.prePoints = 15;  % Pre-stimulus points to use as baseline
     return                  % Return default settings as a structure
 end
