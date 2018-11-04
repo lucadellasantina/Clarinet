@@ -20,6 +20,13 @@
 %
 % *Change log*
 %
+% _*Version 1.3*            created on 2018-11-03 by Luca Della Santina_
+%
+%  + Epochs can be tagged with colors for easy grouping
+%  + Save button stores processed version of epochs and tags
+%  + Fixed error when trying to visualize search epochs before searching
+%  + Added EpochData.hasAttribute method to check for attribute existence
+%
 % _*Version 1.2*            created on 2018-11-02 by Luca Della Santina_
 %
 %  + Processing pipeline allows using multiple epoch processors in chain

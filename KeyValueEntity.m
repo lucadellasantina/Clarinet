@@ -52,6 +52,15 @@ classdef KeyValueEntity < handle & matlab.mixin.CustomDisplay
             end
         end
         
+        function result = hasAttribute(obj, key)
+            keys = obj.attributes.keys;
+            if ismember(key, keys)
+                result = true;
+            else
+                result = false;
+            end
+        end
+        
         function v = getValue(obj, value)
             if strcmpi(value, 'null')
                 v = [];
