@@ -20,12 +20,18 @@
 %
 % *Change log*
 %
+% _*Version 1.6*            created on 2018-11-04 by Luca Della Santina_
+%
+%  + Custom epoch processors stored in userpath/Clarinet/+customProcessors
+%  + Processing pipelines can be saved and loaded from disk
+%  + Fixed enabled/disabled status of processing pipeline buttons
+%
 % _*Version 1.5*            created on 2018-11-04 by Luca Della Santina_
 %
 %  + New Epoch processors: interpolate, decimate, truncate
 %  + New Epoch processors: addNoise, addNonLinearity
 %  + New Epoch processor: powerSpectrum, subtractDrift
-%  + Fixes error when loading About dialog multiple times
+%  + Fixed error when loading About dialog multiple times
 %
 % _*Version 1.4*            created on 2018-11-04 by Luca Della Santina_
 %
