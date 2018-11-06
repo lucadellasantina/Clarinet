@@ -26,6 +26,7 @@
 %  + Processing pipelines can be saved and loaded from disk
 %  + Fixed enabled/disabled status of processing pipeline buttons
 %  + Fixed error when searching text attributes
+%  + Fixed UI size to allow visualization on small projectors (1024x768)
 %
 % _*Version 1.5*            created on 2018-11-04 by Luca Della Santina_
 %
