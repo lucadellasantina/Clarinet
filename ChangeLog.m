@@ -20,6 +20,14 @@
 %
 % *Change log*
 %
+% _*Version 1.7*            created on 2018-11-06 by Luca Della Santina_
+%
+%  + Add custom tags to selected epochs
+%  + Remove selected tag from epoch
+%  + Processing pipelines are stored as an attribute of the epoch
+%  + Load pipeline used to process selected epoch
+%  + Added acknowledgement to contributing labs/projects in about window
+%
 % _*Version 1.6*            created on 2018-11-04 by Luca Della Santina_
 %
 %  + Custom epoch processors stored in userpath/Clarinet/+customProcessors
