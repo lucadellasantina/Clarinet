@@ -226,7 +226,7 @@ classdef CellData < KeyValueEntity
             end
             [params, vals] = obj.getUniqueNonMatchingParamValues([], epochIndices);
         end
-        
+                
         function experimentDate = get.experimentDate(obj)
             experimentDate = datestr(obj.epochs(1).get('epochTime'), 'yyyy-mm-dd');
         end

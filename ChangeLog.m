@@ -20,6 +20,20 @@
 %
 % *Change log*
 %
+% _*Version 2.0*            created on 2018-11-XX by Luca Della Santina_
+%
+%  + Epoch plots display units on the y-axis
+%  + Epoch plots display type of stimulus as title (displayName attribute)
+%  + Features mode allows analysis of features common to group of epochs
+%  + Splitting epochs by tag can be applited at multiple levels in tree
+%  + Splitting epochs by tag across many CellData at once
+%
+%  TODO
+%  + Implement FeatureGroup to store features across cells
+%  + FeatureGroup must be processable by the same Feature extractors
+%  + Otherwise it needs to be implemented as epochgroup by converting
+%  + Feature.data into an EpochGroup.epochs
+%
 % _*Version 1.7*            created on 2018-11-06 by Luca Della Santina_
 %
 %  + Add custom tags to selected epochs

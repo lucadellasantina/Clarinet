@@ -37,7 +37,6 @@ classdef Group < KeyValueEntity
 	    end
 
 	    function feature = createFeature(obj, id, data, varargin)
-	        import sa_labs.analysis.*;
 	        
 	        key = varargin(1 : 2 : end);
 	        value = varargin(2 : 2 : end);
@@ -58,7 +57,7 @@ classdef Group < KeyValueEntity
             % The order of if's is important here            
             if isempty(oldFeature)
                 feature = Feature(description, data);
-                 obj.featureMap(id) = feature;
+                obj.featureMap(id) = feature;
                 return
             end
             
@@ -71,7 +70,7 @@ classdef Group < KeyValueEntity
 	        if ~ isempty(oldFeature)
 	            oldFeature.data = data;
                 oldFeature.description = description;
-	            app.Exceptions.OVERWRIDING_FEATURE.create('warning', true, 'message', strcat(id, ' for  node ', obj.name));
+	            disp(['warning :' id ' for  node ' obj.name]);
 	        end
 	    end
 	    
@@ -104,13 +103,11 @@ classdef Group < KeyValueEntity
 	    end
 
         function data = getFeatureData(obj, key)
-            import sa_labs.analysis.app.*;
-            
             data = [];
             features = [];
             
             if iscellstr(key) && numel(key) > 1
-                throw(Exceptions.MULTIPLE_FEATURE_KEY_PRESENT.create())
+                disp('Multiple feature key present');
             end
             
             if isKey(obj.featureMap, obj.makeValidKey(key))
@@ -186,7 +183,7 @@ classdef Group < KeyValueEntity
 	            return
 	        end
 	        
-	        new = sa_labs.analysis.util.collections.addToCell(old, value);
+	        new = addToCell(old, value);
 	        if all(cellfun(@isnumeric, new))
 	            new = cell2mat(new);
 	        elseif obj.isFeatureEntity(new)

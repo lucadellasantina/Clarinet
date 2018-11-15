@@ -43,3 +43,7 @@ celldata = data{end};
 epochs = celldata.epochs;
 epoch = epochs(1);
 %epoch.get('devices')
+
+%% Feature extraction test
+
+FeatureManager('feature-description.csv')

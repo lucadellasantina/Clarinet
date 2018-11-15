@@ -1,0 +1,6 @@
+id,description,strategy,unit,chartType,xAxis,properties
+EPOCH, Actual epoch for given stream, Epoch, seconds, line, time, 
+EPOCH_AVERAGE, average of epochs, summary, seconds, line, time,
+TIME_INTEGRAL, Inegral of some time points, Epoch, seconds, line, time, 
+SPIKE_TIMES,Spike time for give epoch,Epoch,seconds,,,"endOffset = 0, baseLineEnd = 0"
+SPIKE_AMPS,Spike amplitude for the given epoch,Epoch,voltage,,,

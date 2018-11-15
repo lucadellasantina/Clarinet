@@ -48,7 +48,6 @@ classdef FeatureDescription < dynamicprops
         end
         
         function setProperties(obj, props)
-            import  sa_labs.analysis.app.*;
             
             props = strsplit(props, ',');
             
@@ -59,7 +58,7 @@ classdef FeatureDescription < dynamicprops
                 if numel(prop) == 2
                     obj.set(prop{1}, prop{2});
                 else
-                    Exceptions.INVALID_PROPERTY_PAIR.create('warning', true);
+                    disp('error setting property');
                 end
             end
         end
@@ -91,8 +90,8 @@ classdef FeatureDescription < dynamicprops
                     end
                     obj.(var) = v;
                 end
-            catch exception
-                warning(exception.identifier, exception.message)
+            catch
+                disp('key is empty');
             end
         end
         

@@ -17,12 +17,12 @@
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 % This software is released under the terms of the GPL v3 software license
 %
-classdef EpochGroup < Group
+classdef CellDataGroup < Group
 
     properties
         id                  % Identifier of the epochGroup, assigned by FeatureTreeBuilder @see FeatureTreeBuilder.addEpochGroup
         device              % Amplifier channel name Eg 'Amp1'
-        epochs              % Epochs composing the group
+        epochGroups         % Epoch groups containing features to pool
     end
 
     properties(SetAccess = immutable)
@@ -39,7 +39,7 @@ classdef EpochGroup < Group
 
     methods
 
-        function obj = EpochGroup(splitParameter, splitValue, name)
+        function obj = CellDataGroup(splitParameter, splitValue, name)
             if nargin < 3
                 name = [splitParameter '==' num2str(splitValue)];
             end
@@ -55,46 +55,6 @@ classdef EpochGroup < Group
             p = unique(obj.get(key));
             if numel(p) > 1
                 disp('warning: found multiple values');
-            end
-        end
-
-        function populateEpochResponseAsFeature(obj, epochs)
-            % Add epoch response and all additional derived response as features
-            if isempty(obj.device)
-                    disp('error: device not present');
-                return;
-            end
-
-            for i = 1:numel(epochs)
-                epoch = epochs(i);
-                path = epoch.dataLinks(obj.device);
-                responseHandle = @() epoch.getEpochResponse(path);
-                key = obj.makeValidKey(Constants.EPOCH_KEY_SUFFIX);
-
-                f = obj.createFeature(key, @() transpose(getfield(responseHandle(), 'quantity')), 'append', true);
-                f.description.setFromMap(epoch.attributes);
-                f.description.set('device', obj.device);
-
-                response = responseHandle();
-                if isfield(response, 'units')
-                    units = response.('units');
-                    f.description.set('units', deblank(units(:,1)'));
-                end
-
-                keys = epoch.derivedAttributes.keys;
-                for i=1:numel(keys)
-                    derivedResponseKey = keys{i};
-                    if obj.hasDevice(derivedResponseKey)
-                        derivedResponseHandle = @() epoch.derivedAttributes(derivedResponseKey);
-                        key = obj.makeValidKey(derivedResponseKey);
-                        df = obj.createFeature(key, @() transpose(getfield(derivedResponseHandle(), 'quantity')), 'append', true);
-                        derivedResponse = derivedResponseHandle();
-                        if isfield(derivedResponse, 'units')
-                            units = derivedResponse.('units');
-                            df.description.set('units', deblank(units(:,1)'));
-                        end                        
-                    end
-                end
             end
         end
 
@@ -196,4 +156,3 @@ classdef EpochGroup < Group
         end
     end
 end
-

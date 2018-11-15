@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2315355353" file="/home/luca/Dropbox/MATLAB scripts/Clarinet/Clarinet.prj" location="/home/luca/Dropbox/MATLAB scripts/Clarinet" name="Clarinet" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1954250124" file="/home/luca/Dropbox/MATLAB scripts/Clarinet/Clarinet.prj" location="/home/luca/Dropbox/MATLAB scripts/Clarinet" name="Clarinet" target="target.mlapps" target-name="Package App">
     <param.appname>Clarinet</param.appname>
     <param.authnamewatermark>Luca Della Santina</param.authnamewatermark>
     <param.email>luca.dellasantina@gmail.com</param.email>
@@ -13,7 +13,7 @@
     <param.summary>Electrophysiology time series data analysis</param.summary>
     <param.description>Copyright 2018 Luca Della Santina</param.description>
     <param.screenshot>${PROJECT_ROOT}/Clarinet_resources/Clarinet.png</param.screenshot>
-    <param.version>1.7</param.version>
+    <param.version>2.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
       <item>Curve Fitting Toolbox</item>
@@ -43,17 +43,25 @@
     <fileset.depfun>
       <file>${PROJECT_ROOT}/CellData.m</file>
       <file>${PROJECT_ROOT}/CellDataByAmp.m</file>
+      <file>${PROJECT_ROOT}/Constants.m</file>
       <file>${PROJECT_ROOT}/DialogAbout.mlapp</file>
       <file>${PROJECT_ROOT}/DialogFind.mlapp</file>
+      <file>${PROJECT_ROOT}/DialogGroupBy.mlapp</file>
       <file>${PROJECT_ROOT}/EpochData.m</file>
+      <file>${PROJECT_ROOT}/EpochGroup.m</file>
+      <file>${PROJECT_ROOT}/Feature.m</file>
+      <file>${PROJECT_ROOT}/FeatureDescription.m</file>
+      <file>${PROJECT_ROOT}/Group.m</file>
       <file>${PROJECT_ROOT}/KeyValueEntity.m</file>
       <file>${PROJECT_ROOT}/SymphonyParser.m</file>
       <file>${PROJECT_ROOT}/SymphonyV1Parser.m</file>
       <file>${PROJECT_ROOT}/SymphonyV2Parser.m</file>
+      <file>${PROJECT_ROOT}/addToCell.m</file>
       <file>${PROJECT_ROOT}/addToMap.m</file>
       <file>${PROJECT_ROOT}/dotnetTicksToDateTime.m</file>
       <file>${PROJECT_ROOT}/editStruct.m</file>
       <file>${PROJECT_ROOT}/getMatchingKeyValue.m</file>
+      <file>${PROJECT_ROOT}/iseach.m</file>
       <file>${MATLAB_ROOT}/toolbox/local/userpath.m</file>
     </fileset.depfun>
     <fileset.resources>
@@ -93,7 +101,7 @@
       <vista>false</vista>
       <linux>true</linux>
       <solaris>false</solaris>
-      <osver>4.15.0-38-generic</osver>
+      <osver>4.15.0-39-generic</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>glnxa64</arch>
