@@ -25,8 +25,14 @@
 %  + Epoch plots display units on the y-axis
 %  + Epoch plots display type of stimulus as title (displayName attribute)
 %  + Features mode allows analysis of features common to group of epochs
-%  + Splitting epochs by tag can be applited at multiple levels in tree
+%  + Splitting epochs by tag can be applited in sequence or parallel
 %  + Splitting epochs by tag across many CellData at once
+%  + Diary plot of epoch attributes when CellData is selected in Features
+%  + Feature tree can be serialized/deserialized to disk with open/save
+%  + Switching between Epochs and Features mode retains ongoing data
+%  + Fixed link to homepage in about dialog
+%  + Find button becomes Split when in Features mode
+%  + Plot average feature when root node is selected in Features mode
 %
 %  TODO
 %  + Implement FeatureGroup to store features across cells
