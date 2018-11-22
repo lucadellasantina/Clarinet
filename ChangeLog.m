@@ -20,7 +20,7 @@
 %
 % *Change log*
 %
-% _*Version 2.0*            created on 2018-11-XX by Luca Della Santina_
+% _*Version 2.0*            created on 2018-11-21 by Luca Della Santina_
 %
 %  + Epoch plots display units on the y-axis
 %  + Epoch plots display type of stimulus as title (displayName attribute)
@@ -32,13 +32,10 @@
 %  + Switching between Epochs and Features mode retains ongoing data
 %  + Fixed link to homepage in about dialog
 %  + Find button becomes Split when in Features mode
-%  + Plot average feature when root node is selected in Features mode
-%
-%  TODO
-%  + Implement FeatureGroup to store features across cells
-%  + FeatureGroup must be processable by the same Feature extractors
-%  + Otherwise it needs to be implemented as epochgroup by converting
-%  + Feature.data into an EpochGroup.epochs
+%  + Plot average feature by Split when root node is selected
+%  + Legends in all type of plots
+%  + Epochs can be removed from a cell with minus button
+%  + Clear buttons clear the tree of cells / features
 %
 % _*Version 1.7*            created on 2018-11-06 by Luca Della Santina_
 %

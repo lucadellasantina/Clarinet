@@ -1,8 +1,8 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="711785939" file="/home/luca/Dropbox/MATLAB scripts/Clarinet/Clarinet.prj" location="/home/luca/Dropbox/MATLAB scripts/Clarinet" name="Clarinet" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="301585559" file="/home/luca/Dropbox/MATLAB scripts/Clarinet/Clarinet.prj" location="/home/luca/Dropbox/MATLAB scripts/Clarinet" name="Clarinet" target="target.mlapps" target-name="Package App">
     <param.appname>Clarinet</param.appname>
-    <param.authnamewatermark />
-    <param.email />
+    <param.authnamewatermark>Luca Della Santina</param.authnamewatermark>
+    <param.email>luca.dellasantina@gmail.com</param.email>
     <param.company />
     <param.icon>${PROJECT_ROOT}/Clarinet_resources/icon_24.png</param.icon>
     <param.icons>
@@ -33,8 +33,6 @@
     <param.output>/home/luca/Dropbox/MATLAB scripts/Clarinet</param.output>
     <param.guid>80e3840d-a554-40ef-9eb5-b2d596afb8ef</param.guid>
     <unset>
-      <param.authnamewatermark />
-      <param.email />
       <param.company />
       <param.platforms />
       <param.output />
