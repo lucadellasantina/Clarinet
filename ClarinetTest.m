@@ -33,7 +33,8 @@ epoch = epochs(1);
 %% Test importing symphony v2
 %fName = 'symphony_v2.h5';
 %fName = '2018-01-23_ERG_CD1b.h5';
-fName = '2018-01-23_ERG_C57BL.h5';
+%fName = '2018-01-23_ERG_C57BL.h5';
+fName = '101718A.h5';
 
 disp(['Importing file coming from Symphony version: ' num2str(SymphonyParser.getVersion(fName))]);
 ref = SymphonyV2Parser(fName);

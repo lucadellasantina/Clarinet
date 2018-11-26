@@ -36,6 +36,10 @@
 %  + Legends in all type of plots
 %  + Epochs can be removed from a cell with minus button
 %  + Clear buttons clear the tree of cells / features
+%  + Allowed customExtractors in local folder
+%  + Loads multiple cells in the same .h5 file
+%  + Tree item now shows Filename.h5::CellName(recording date)
+%  + Fixed error when CellData label is made of multiple lines (cell array)
 %
 % _*Version 1.7*            created on 2018-11-06 by Luca Della Santina_
 %
