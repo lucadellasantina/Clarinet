@@ -20,6 +20,11 @@
 %
 % *Change log*
 %
+% _*Version 2.1*            created on 2018-12-04 by Luca Della Santina_
+%
+%  + Epoch splitting logic now codified as tree
+%  + Epoch search criteria "None" matches none of the specified conditions
+%
 % _*Version 2.0*            created on 2018-11-21 by Luca Della Santina_
 %
 %  + Epoch plots display units on the y-axis

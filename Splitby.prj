@@ -1,0 +1,77 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration file="/home/luca/Dropbox/MATLAB scripts/Clarinet/Splitby.prj" location="/home/luca/Dropbox/MATLAB scripts/Clarinet" name="Splitby" target="target.mlapps" target-name="Package App">
+    <param.appname>Splitby</param.appname>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot>/tmp/tpe24b303e_90a0_49e0_a67e_7acaea73dad9.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>/home/luca/Dropbox/MATLAB scripts/Clarinet</param.output>
+    <param.guid>c5af8d32-103b-4f36-a4d2-343ae0f9a06d</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/DialogSplitBy.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/home/luca/Dropbox/MATLAB scripts" name="Clarinet" optional="false">/home/luca/Dropbox/MATLAB scripts/Clarinet</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/home/luca/MATLAB/R2018b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>4.15.0-39-generic</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

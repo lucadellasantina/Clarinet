@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2123050104" file="/home/luca/Dropbox/MATLAB scripts/Clarinet/Clarinet.prj" location="/home/luca/Dropbox/MATLAB scripts/Clarinet" name="Clarinet" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1944123893" file="/home/luca/Dropbox/MATLAB scripts/Clarinet/Clarinet.prj" location="/home/luca/Dropbox/MATLAB scripts/Clarinet" name="Clarinet" target="target.mlapps" target-name="Package App">
     <param.appname>Clarinet</param.appname>
     <param.authnamewatermark>Luca Della Santina</param.authnamewatermark>
     <param.email>luca.dellasantina@gmail.com</param.email>
@@ -13,7 +13,7 @@
     <param.summary>Electrophysiology time series data analysis</param.summary>
     <param.description>Copyright 2018 Luca Della Santina</param.description>
     <param.screenshot>${PROJECT_ROOT}/Clarinet_resources/Clarinet.png</param.screenshot>
-    <param.version>2.0</param.version>
+    <param.version>2.1</param.version>
     <param.products.name>
       <item>MATLAB</item>
       <item>Curve Fitting Toolbox</item>
@@ -46,7 +46,7 @@
       <file>${PROJECT_ROOT}/Constants.m</file>
       <file>${PROJECT_ROOT}/DialogAbout.mlapp</file>
       <file>${PROJECT_ROOT}/DialogFind.mlapp</file>
-      <file>${PROJECT_ROOT}/DialogGroupBy.mlapp</file>
+      <file>${PROJECT_ROOT}/DialogSplitBy.mlapp</file>
       <file>${PROJECT_ROOT}/EpochData.m</file>
       <file>${PROJECT_ROOT}/EpochGroup.m</file>
       <file>${PROJECT_ROOT}/Feature.m</file>
